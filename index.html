@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ANIMEDONG_MASTER_43</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donghua Master</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <style>
     * {
@@ -13,68 +13,97 @@
       font-family: 'Poppins', sans-serif;
     }
     body {
-      background: linear-gradient(to right, #1e1e2f, #ffffff);
-      color: #333;
+      background: linear-gradient(to right, #1e1e2f, #111);
+      color: #fff;
     }
     header {
       background: #111827;
-      color: white;
-      padding: 20px;
       text-align: center;
+      padding: 30px 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #bbb;
     }
     nav {
+      background: #27272a;
       display: flex;
       justify-content: center;
-      background: #27272a;
+      flex-wrap: wrap;
       padding: 10px 0;
     }
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 10px 15px;
+      font-weight: 500;
     }
-    .container {
-      padding: 30px;
+    nav a:hover {
+      text-decoration: underline;
     }
-    .anime-card {
-      background: #f1f1f1;
+    main {
+      padding: 30px 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1c1c1c;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       overflow: hidden;
-      margin-bottom: 20px;
-      transition: transform 0.2s;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
     }
-    .anime-card:hover {
-      transform: scale(1.02);
+    .card:hover {
+      transform: scale(1.03);
     }
-    .anime-card img {
+    .card img {
       width: 100%;
-      height: auto;
+      height: 300px;
+      object-fit: cover;
     }
-    .anime-info {
-      padding: 15px;
-    }
-    .anime-title {
+    .card h2 {
+      padding: 15px 10px 5px;
       font-size: 1.2rem;
-      font-weight: bold;
     }
-    .anime-meta {
+    .card p {
+      padding: 0 15px 15px;
       font-size: 0.9rem;
-      color: #555;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px 0 20px;
+      padding: 10px 20px;
+      background: #e50914;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #b00710;
     }
     footer {
-      background: #111827;
-      color: white;
       text-align: center;
-      padding: 15px;
+      background: #111827;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
       margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>ANIMEDONG_MASTER_43</h1>
-    <p>Watch Latest Donghua Free</p>
+    <h1>Donghua Master</h1>
+    <p>Watch Latest & Popular Donghua Free</p>
   </header>
 
   <nav>
@@ -85,28 +114,47 @@
     <a href="#">DMCA</a>
   </nav>
 
-  <div class="container">
-    <div class="anime-card">
-      <img src="https://via.placeholder.com/800x400" alt="Anime Cover">
-      <div class="anime-info">
-        <div class="anime-title">Battle Through The Heavens</div>
-        <div class="anime-meta">Genre: Action, Fantasy | Year: 2023</div>
-        <p>This is a popular Donghua series following Xiao Yan's journey to reclaim his lost power in a mystical world.</p>
-      </div>
+  <main class="grid">
+    <div class="card">
+      <img src="https://i.ibb.co/zN1LKw5/soulland2.jpg" alt="Soul Land 2">
+      <h2>Soul Land 2</h2>
+      <p>Experience the evolution of Tang San's legacy in this new generation.</p>
+      <a href="episode1.html" class="btn">Watch Now</a>
     </div>
-
-    <div class="anime-card">
-      <img src="https://via.placeholder.com/800x400" alt="Anime Cover">
-      <div class="anime-info">
-        <div class="anime-title">Soul Land</div>
-        <div class="anime-meta">Genre: Martial Arts, Adventure | Year: 2024</div>
-        <p>Follow Tang San as he uncovers the secrets of martial souls in a spirit-filled world.</p>
-      </div>
+    <div class="card">
+      <img src="https://i.ibb.co/5TcBkph/btth.jpg" alt="Battle Through the Heavens">
+      <h2>Battle Through the Heavens</h2>
+      <p>Follow Xiao Yan as he battles to reclaim his power in a mystical world.</p>
+      <a href="episode2.html" class="btn">Watch Now</a>
     </div>
-  </div>
+    <div class="card">
+      <img src="https://i.ibb.co/S7cDtFg/renegade.jpg" alt="Renegade Immortal">
+      <h2>Renegade Immortal</h2>
+      <p>A story of cultivation, fate, and defiance against the heavens.</p>
+      <a href="episode3.html" class="btn">Watch Now</a>
+    </div>
+    <div class="card">
+      <img src="https://i.ibb.co/Ch7k5PR/perfectworld.jpg" alt="Perfect World">
+      <h2>Perfect World</h2>
+      <p>A boy born with divine potential struggles to protect his world.</p>
+      <a href="episode4.html" class="btn">Watch Now</a>
+    </div>
+    <div class="card">
+      <img src="https://i.ibb.co/W3XKMVL/throneofseal.jpg" alt="Throne of Seal">
+      <h2>Throne of Seal</h2>
+      <p>Step into a realm of knights, magic, and powerful seals of destiny.</p>
+      <a href="episode5.html" class="btn">Watch Now</a>
+    </div>
+    <div class="card">
+      <img src="https://i.ibb.co/W35cK2M/swallowedstar.jpg" alt="Swallowed Star">
+      <h2>Swallowed Star</h2>
+      <p>In a futuristic world, warriors rise to protect humanity from beasts.</p>
+      <a href="episode6.html" class="btn">Watch Now</a>
+    </div>
+  </main>
 
   <footer>
-    <p>&copy; 2025 ANIMEDONG_MASTER_43. All rights reserved.</p>
+    <p>&copy; 2025 Donghua Master. All rights reserved.</p>
   </footer>
 </body>
 </html>
